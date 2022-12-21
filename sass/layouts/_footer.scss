@@ -1,0 +1,47 @@
+.footer {
+  padding: 60px;
+  background: #2f303a;
+
+  &__content {
+    display: grid;
+    gap: 70px;
+    grid-template-columns: auto auto 1fr;
+  }
+
+  &__section {
+    &:not(:first-child) {
+      margin-top: 12px;
+    }
+
+    &--mailing {
+      margin-left: auto;
+    }
+  }
+
+  &__section-title {
+    margin-bottom: 20px;
+    color: var(--light-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__list-item {
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &__address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    color: var(--light-color);
+  }
+}

@@ -1,0 +1,11 @@
+.header {
+  background: var(--light-color);
+  border-bottom: 1px solid var(--silver-color);
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 93px;
+    height: 80px;
+  }
+}

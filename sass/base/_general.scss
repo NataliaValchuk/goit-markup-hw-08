@@ -1,0 +1,17 @@
+body {
+  color: var(--secondary-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 1200px;
+  height: 100%;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
