@@ -43,4 +43,14 @@
   &__btn {
     margin: 30px auto 0;
   }
+
+  &--desktop {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    &--desktop {
+      display: block;
+    }
+  }
 }

@@ -3,7 +3,11 @@
   background: #2f303a;
 
   &__content {
-    display: grid;
+    display: block;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    // display: grid;
     gap: 70px;
     grid-template-columns: auto auto 1fr;
   }

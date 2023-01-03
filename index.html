@@ -37,21 +37,44 @@
             Web<span class="logo__accent">Studio</span>
           </a>
 
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__list-item">
-                <a class="nav__link" href="./studio.html">Студія</a>
-              </li>
-              <li class="nav__list-item">
-                <a class="nav__link" href="./portfolio.html"
-                  >Портфоліо</a
-                >
-              </li>
-              <li class="nav__list-item">
-                <a class="nav__link" href="">Контакти</a>
-              </li>
-            </ul>
-          </nav>
+          <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use
+                class="icon-menu"
+                href="./images/icons.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="menu-container">
+            <div class="navigation">
+              <ul class="nav__list">
+                <li class="nav__list-item">
+                  <a class="nav__link" href="./studio.html">Студія</a>
+                </li>
+                <li class="nav__list-item">
+                  <a class="nav__link" href="./portfolio.html"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="nav__list-item">
+                  <a class="nav__link" href="">Контакти</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="contact contact--desktop">
           <ul class="contact__list">
             <li class="contact__list-item">
               <a
@@ -86,7 +109,7 @@
         <div class="container">
           <div class="hero__content">
             <h1 class="hero__title">
-              Ефективні рішення для <br />
+              Ефективні рішення для <br class="hero__title-divider" />
               вашого бізнесу
             </h1>
             <button
@@ -99,6 +122,7 @@
           </div>
         </div>
       </section>
+
       <section class="benefits">
         <div class="container">
           <h2 class="visually-hidden">Переваги</h2>
@@ -170,12 +194,22 @@
           </ul>
         </div>
       </section>
+
       <section class="about-us">
         <div class="container">
           <h2 class="about-us__title">Чим ми займаємося</h2>
           <ul class="about-us__list">
             <li class="about-us__list-item">
-              <img src="./images/box-1.jpg" alt="" width="370" />
+              <img
+                class="about-us__list-item-img"
+                srcset="
+                  ./images/box-1.jpg    1x,
+                  ./images/box-1-2x.jpg 2x
+                "
+                src="./images/box-1.jpg"
+                alt=""
+                width="370"
+              />
               <div class="about-us__list-item-panel">
                 <h3 class="about-us__list-item-title">
                   Десктопні додатки
@@ -183,7 +217,16 @@
               </div>
             </li>
             <li class="about-us__list-item">
-              <img src="./images/box-2.jpg" alt="" width="370" />
+              <img
+                class="about-us__list-item-img"
+                srcset="
+                  ./images/box-2.jpg    1x,
+                  ./images/box-2-2x.jpg 2x
+                "
+                src="./images/box-2.jpg"
+                alt=""
+                width="370"
+              />
               <div class="about-us__list-item-panel">
                 <h3 class="about-us__list-item-title">
                   Мобільні додатки
@@ -191,7 +234,16 @@
               </div>
             </li>
             <li class="about-us__list-item">
-              <img src="./images/box-3.jpg" alt="" width="370" />
+              <img
+                class="about-us__list-item-img"
+                srcset="
+                  ./images/box-3.jpg    1x,
+                  ./images/box-3-2x.jpg 2x
+                "
+                src="./images/box-3.jpg"
+                alt=""
+                width="370"
+              />
               <div class="about-us__list-item-panel">
                 <h3 class="about-us__list-item-title">
                   Дизайнерські рішення
@@ -201,12 +253,23 @@
           </ul>
         </div>
       </section>
+
       <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__list-item">
-              <img src="./images/img-1.jpg" alt="" width="270" />
+              <img
+                class="team__list-item-img"
+                srcset="
+                  ./images/img-1m.jpg    1x,
+                  ./images/img-1m-2x.jpg 2x
+                "
+                src="./images/img-1m.jpg"
+                alt=""
+                width="270"
+              />
+
               <div class="team__list-item-info">
                 <h3 class="team__list-item-name">Ігор Дем'яненко</h3>
                 <p class="team__list-item-skill" lang="en">
@@ -253,7 +316,16 @@
               </div>
             </li>
             <li class="team__list-item">
-              <img src="./images/img-2.jpg" alt="" width="270" />
+              <img
+                class="team__list-item-img"
+                srcset="
+                  ./images/img-2m.jpg    1x,
+                  ./images/img-2m-2x.jpg 2x
+                "
+                src="./images/img-2m.jpg"
+                alt=""
+                width="270"
+              />
               <div class="team__list-item-info">
                 <h3 class="team__list-item-name">Ольга Рєпіна</h3>
                 <p class="team__list-item-skill" lang="en">
@@ -300,7 +372,16 @@
               </div>
             </li>
             <li class="team__list-item">
-              <img src="./images/img-3.jpg" alt="" width="270" />
+              <img
+                class="team__list-item-img"
+                srcset="
+                  ./images/img-3m.jpg    1x,
+                  ./images/img-3m-2x.jpg 2x
+                "
+                src="./images/img-3m.jpg"
+                alt=""
+                width="270"
+              />
               <div class="team__list-item-info">
                 <h3 class="team__list-item-name">Микола Тарасов</h3>
                 <p class="team__list-item-skill" lang="en">
@@ -347,7 +428,16 @@
               </div>
             </li>
             <li class="team__list-item">
-              <img src="./images/img-4.jpg" alt="" width="270" />
+              <img
+                class="team__list-item-img"
+                srcset="
+                  ./images/img-4m.jpg    1x,
+                  ./images/img-4m-2x.jpg 2x
+                "
+                src="./images/img-4m.jpg"
+                alt=""
+                width="270"
+              />
               <div class="team__list-item-info">
                 <h3 class="team__list-item-name">Михайло Єрмаков</h3>
                 <p class="team__list-item-skill" lang="en">
@@ -534,6 +624,98 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile Menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button
+        type="button"
+        class="menu-toggle js-close-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        data-menu-button
+      >
+        <svg
+          width="40"
+          height="40"
+          aria-label="Закрити мобільне меню"
+        >
+          <use
+            class="icon-close"
+            href="./images/icons.svg#icon-close-black"
+          ></use>
+        </svg>
+      </button>
+
+      <div class="mobile-menu">
+        <div class="mob-navigation">
+          <ul class="mob-nav__list">
+            <li class="mob-nav__list-item">
+              <a class="mob-nav__link" href="./studio.html">Студія</a>
+            </li>
+            <li class="mob-nav__list-item">
+              <a class="mob-nav__link" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mob-nav__list-item">
+              <a class="mob-nav__link" href="">Контакти</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mob-contact">
+          <ul class="mob-contact__list">
+            <li class="mob-contact__list-item">
+              <a
+                class="mob-contact__link-tel"
+                href="tel:+380961111111"
+              >
+                <span>+38 096 111 11 11</span>
+              </a>
+            </li>
+            <li class="mob-contact__list-item">
+              <a
+                class="mob-contact__link-mail"
+                href="mailto:info@devstudio.com"
+              >
+                <span>info@devstudio.com</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mob-social-link">
+          <ul class="mob-social-link-list">
+            <li>
+              <a href="" rel="" class="mob-social-link-link"
+                >Instagram<span></span
+              ></a>
+            </li>
+          </ul>
+          <ul class="mob-social-link-list">
+            <li>
+              <a href="" rel="" class="mob-social-link-link"
+                >Twitter</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-social-link-list">
+            <li>
+              <a href="" rel="" class="mob-social-link-link"
+                >Facebook</a
+              >
+            </li>
+          </ul>
+          <ul class="mob-social-link-list">
+            <li>
+              <a href="" rel="" class="mob-social-link-link"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Mobile Menu -->
+
     <div class="modal__backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close" data-modal-close>
@@ -616,5 +798,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
