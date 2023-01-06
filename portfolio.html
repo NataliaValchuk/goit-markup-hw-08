@@ -9,12 +9,7 @@
     />
 
     <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin
-    />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -33,6 +28,24 @@
             Web<span class="logo__accent">Studio</span>
           </a>
 
+          <button
+            type="button"
+            class="header__open-menu-btn js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-menu-button
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use
+                class="icon-menu"
+                href="./images/icons.svg#icon-menu"
+              ></use>
+            </svg>
+          </button>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__list-item">
@@ -347,5 +360,89 @@
         </div>
       </div>
     </footer>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button
+        type="button"
+        class="mobile-menu__close-btn js-close-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        data-menu-button
+      >
+        <svg
+          width="30"
+          height="30"
+          aria-label="Закрити мобільне меню"
+        >
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      <div class="mobile-menu__content">
+        <nav class="mobile-menu__nav">
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__list-item">
+              <a class="mobile-menu__link" href="./studio.html">
+                Студія
+              </a>
+            </li>
+            <li class="mobile-menu__list-item">
+              <a class="mobile-menu__link" href="./portfolio.html">
+                Портфоліо
+              </a>
+            </li>
+            <li class="mobile-menu__list-item">
+              <a class="mobile-menu__link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__contact">
+          <ul class="mobile-menu__contact-list">
+            <li class="mobile-menu__contact-item">
+              <a
+                class="mobile-menu__contact-link mobile-menu__contact-link--tel"
+                href="tel:+380961111111"
+              >
+                <span>+38 096 111 11 11</span>
+              </a>
+            </li>
+            <li class="mobile-menu__contact-item">
+              <a
+                class="mobile-menu__contact-link mobile-menu__contact-link--mail"
+                href="mailto:info@devstudio.com"
+              >
+                <span>info@devstudio.com</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="mobile-menu__soc">
+          <li class="mobile-menu__soc-item">
+            <a href="#" rel="" class="mobile-menu__soc-link">
+              Instagram
+            </a>
+          </li>
+          <li class="mobile-menu__soc-item">
+            <a href="#" rel="" class="mobile-menu__soc-link">
+              Twitter
+            </a>
+          </li>
+          <li class="mobile-menu__soc-item">
+            <a href="#" rel="" class="mobile-menu__soc-link">
+              Facebook
+            </a>
+          </li>
+          <li class="mobile-menu__soc-item">
+            <a href="#" rel="" class="mobile-menu__soc-link">
+              LinkedIn
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Mobile Menu -->
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

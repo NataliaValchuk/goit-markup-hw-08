@@ -5,9 +5,37 @@
   &__wrapper {
     display: flex;
     align-items: center;
-   gap:96px;
-    height: 80px;
-   
-   
+    justify-content: space-between;
+    gap: 78px;
+    height: 60px;
+  }
+
+  &__open-menu-btn {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background-color: transparent;
+
+    &:active,
+    &:focus {
+      fill: var(--primary-color);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__wrapper {
+      justify-content: initial;
+      height: 80px;
+    }
+
+    &__open-menu-btn {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__wrapper {
+      gap: 96px;
+    }
   }
 }

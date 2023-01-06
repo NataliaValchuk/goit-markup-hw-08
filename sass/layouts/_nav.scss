@@ -1,4 +1,6 @@
 .nav {
+  display: none;
+
   &,
   &__list,
   &__list-item,
@@ -49,5 +51,9 @@
         background-color: var(--primary-color);
       }
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
   }
 }

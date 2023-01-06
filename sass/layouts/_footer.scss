@@ -1,25 +1,11 @@
 .footer {
-  padding: 60px;
+  padding: 60px 0;
   background: #2f303a;
 
   &__content {
-    display: block;
     position: relative;
     justify-content: center;
     text-align: center;
-    // display: grid;
-    gap: 70px;
-    grid-template-columns: auto auto 1fr;
-  }
-
-  &__section {
-    &:not(:first-child) {
-      margin-top: 12px;
-    }
-
-    &--mailing {
-      margin-left: auto;
-    }
   }
 
   &__section-title {
@@ -47,5 +33,50 @@
     letter-spacing: 0.03em;
 
     color: var(--light-color);
+  }
+
+  @media screen and (max-width: 767px) {
+    &__section {
+      &:not(:last-child) {
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 60px;
+    }
+
+    &__section {
+      &:not(:last-child) {
+        width: calc(50% - 30px);
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__content {
+      display: grid;
+      grid-template-columns: auto auto 1fr;
+      gap: 70px;
+      text-align: left;
+    }
+
+    &__section {
+      &:not(:first-child) {
+        margin-top: 12px;
+      }
+
+      &--mailing {
+        margin-left: auto;
+      }
+    }
   }
 }
